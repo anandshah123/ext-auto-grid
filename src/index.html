@@ -12,44 +12,47 @@
 <!-- use my plugin -->
 <script src="ext-auto-grid.js"></script>
 <script>
-$("#extRestGrid").extAutoGrid({
-	url: 'server/static.json',
-	title:'Customer List',
-	width: '100%',
-	root: '_embedded.customers',
-	fields: ['name','address','notes','village','contactNumber','email'],
-	columns: [{text: 'Name',
-        dataIndex: 'name',
-        width: 300,
-        field: {
-            xtype: 'textfield'
-        }},
-        {text: 'Address',
-            dataIndex: 'address',
-            field: {
-                xtype: 'textfield'
-            }},
+    $("#extRestGrid").extAutoGrid({
+        url: 'server/static.json',
+        title: 'Customer List',
+        width: '100%',
+        root: '_embedded.customers',
+        fields: ['name', 'address', 'notes', 'village', 'contactNumber', 'email'],
+        columns: [
+            {text: 'Name',
+                dataIndex: 'name',
+                width: 300,
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Address',
+                dataIndex: 'address',
+                width: 400,
+                field: {
+                    xtype: 'textfield'
+                }},
             {text: 'Notes',
                 dataIndex: 'notes',
                 field: {
                     xtype: 'textfield'
-                }},{text: 'Village',
-                    dataIndex: 'village',
-                    field: {
-                        xtype: 'textfield'
-                    }},
-        {text: 'Contact Number',
-        dataIndex: 'contactNumber',
-        width: 400,
-        field: {
-            xtype: 'textfield'
-        }},{text:'Email',
-        dataIndex: 'email',
-        field: {
-            xtype: 'textfield'
-        }}
-	 ]
-});
+                }},
+            {text: 'Village',
+                dataIndex: 'village',
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Contact Number',
+                dataIndex: 'contactNumber',
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Email',
+                dataIndex: 'email',
+                field: {
+                    xtype: 'textfield'
+                }}
+        ]
+    });
 </script>
 </body>
 </html>

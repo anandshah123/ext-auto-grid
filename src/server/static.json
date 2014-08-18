@@ -1,100 +1,106 @@
 {
-    "_links" : {
-        "self" : {
-            "href" : "http://localhost:8080/customers?_dc=1408360943681&page=1&start=0&limit=20{&size,sort}",
-            "templated" : true
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/customers?_dc=1408360943681&page=1&start=0&limit=20{&size,sort}",
+            "templated": true
         },
-        "search" : {
-            "href" : "http://localhost:8080/customers/search"
+        "search": {
+            "href": "http://localhost:8080/customers/search"
         }
     },
-    "_embedded" : {
-        "customers" : [ {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "John doe",
-            "village" : "New York",
-            "contactNumber" : "91-9016522121",
-            "email" : "john.doe@gmail.com",
-            "address" : "17, wall street, NY",
-            "notes" : "",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
+    "_embedded": {
+        "customers": [
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "John doe",
+                "village": "New York",
+                "contactNumber": "91-9016522121",
+                "email": "john.doe@gmail.com",
+                "address": "17, wall street, NY",
+                "notes": "",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
+                }
+            },
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "Willium doe",
+                "village": "Settle",
+                "contactNumber": "None",
+                "email": "willium@willsonsoft.com",
+                "address": "235, Archimen tower, settle.",
+                "notes": "",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
+                }
+            },
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "Lancy Jecob",
+                "village": "New York",
+                "contactNumber": "None",
+                "email": "lancy.jecob@yahoo.co.in",
+                "address": "43, st lose street, NY",
+                "notes": "Premium Customer",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
+                }
+            },
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "John doe",
+                "village": "New York",
+                "contactNumber": "91-9016522121",
+                "email": "john.doe@gmail.com",
+                "address": "17, wall street, NY",
+                "notes": "",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
+                }
+            },
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "John doe",
+                "village": "New York",
+                "contactNumber": "91-9016522121",
+                "email": "john.doe@gmail.com",
+                "address": "17, wall street, NY",
+                "notes": "",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
                 }
             }
-        }, {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "Willium doe",
-            "village" : "Settle",
-            "contactNumber" : "None",
-            "email" : "willium@willsonsoft.com",
-            "address" : "235, Archimen tower, settle.",
-            "notes" : "",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
-                }
-            }
-        }, {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "Lancy Jecob",
-            "village" : "New York",
-            "contactNumber" : "None",
-            "email" : "lancy.jecob@yahoo.co.in",
-            "address" : "43, st lose street, NY",
-            "notes" : "Premium Customer",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
-                }
-            }
-        }, {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "John doe",
-            "village" : "New York",
-            "contactNumber" : "91-9016522121",
-            "email" : "john.doe@gmail.com",
-            "address" : "17, wall street, NY",
-            "notes" : "",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
-                }
-            }
-        }, {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "John doe",
-            "village" : "New York",
-            "contactNumber" : "91-9016522121",
-            "email" : "john.doe@gmail.com",
-            "address" : "17, wall street, NY",
-            "notes" : "",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
-                }
-            }
-        } ]
+        ]
     },
-    "page" : {
-        "size" : 20,
-        "totalElements" : 1,
-        "totalPages" : 1,
-        "number" : 0
+    "page": {
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1,
+        "number": 0
     }
 }

@@ -7,7 +7,7 @@ ext-auto-grid
 
 ```html
 <html>
-<div id="extRestGrid"></div>
+    <div id="extRestGrid"></div>
 </html>
 ```
 
@@ -28,35 +28,37 @@ ext-auto-grid
 
 ```js
 {
-    "_links" : {
-        "self" : {
-            "href" : "http://localhost:8080/customers?_dc=1408360943681&page=1&start=0&limit=20{&size,sort}"
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/customers?_dc=1408360943681&page=1&start=0&limit=20{&size,sort}"
         }
     },
-    "_embedded" : {
-        "customers" : [ {
-            "version" : 1,
-            "createdDate" : 1408249469990,
-            "updatedDate" : 1408256672987,
-            "name" : "John doe",
-            "village" : "New York",
-            "contactNumber" : "91-9016522121",
-            "email" : "john.doe@gmail.com",
-            "address" : "17, wall street, NY",
-            "notes" : "",
-            "image" : null,
-            "_links" : {
-                "self" : {
-                    "href" : "http://localhost:8080/customers/1"
+    "_embedded": {
+        "customers": [
+            {
+                "version": 1,
+                "createdDate": 1408249469990,
+                "updatedDate": 1408256672987,
+                "name": "John doe",
+                "village": "New York",
+                "contactNumber": "91-9016522121",
+                "email": "john.doe@gmail.com",
+                "address": "17, wall street, NY",
+                "notes": "",
+                "image": null,
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/customers/1"
+                    }
                 }
             }
-        }]
-	},
-    "page" : {
-        "size" : 20,
-        "totalElements" : 1,
-        "totalPages" : 1,
-        "number" : 0
+        ]
+    },
+    "page": {
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1,
+        "number": 0
     }
 }
 ```
@@ -64,44 +66,47 @@ ext-auto-grid
 <h6>Step 3. Use this plugin to convert it to ext js REST grid.</h6>
 
 ```js
-$("#extRestGrid").extAutoGrid({
-	url: 'server/static.json',
-	title:'Customer List',
-	width: '100%',
-	root: '_embedded.customers',
-	fields: ['name','address','notes','village','contactNumber','email'],
-	columns: [{text: 'Name',
-        dataIndex: 'name',
-        width: 300,
-        field: {
-            xtype: 'textfield'
-        }},
-        {text: 'Address',
-            dataIndex: 'address',
-            field: {
-                xtype: 'textfield'
-            }},
+ $("#extRestGrid").extAutoGrid({
+        url: 'server/static.json',
+        title: 'Customer List',
+        width: '100%',
+        root: '_embedded.customers',
+        fields: ['name', 'address', 'notes', 'village', 'contactNumber', 'email'],
+        columns: [
+            {text: 'Name',
+                dataIndex: 'name',
+                width: 300,
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Address',
+                dataIndex: 'address',
+                field: {
+                    xtype: 'textfield'
+                }},
             {text: 'Notes',
                 dataIndex: 'notes',
                 field: {
                     xtype: 'textfield'
-                }},{text: 'Village',
-                    dataIndex: 'village',
-                    field: {
-                        xtype: 'textfield'
-                    }},
-        {text: 'Contact Number',
-        dataIndex: 'contactNumber',
-        width: 400,
-        field: {
-            xtype: 'textfield'
-        }},{text:'Email',
-        dataIndex: 'email',
-        field: {
-            xtype: 'textfield'
-        }}
-	 ]
-});
+                }},
+            {text: 'Village',
+                dataIndex: 'village',
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Contact Number',
+                dataIndex: 'contactNumber',
+                width: 400,
+                field: {
+                    xtype: 'textfield'
+                }},
+            {text: 'Email',
+                dataIndex: 'email',
+                field: {
+                    xtype: 'textfield'
+                }}
+        ]
+    });
 ```
 
 <h6>The result</h6>
