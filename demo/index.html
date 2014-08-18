@@ -1,0 +1,55 @@
+<html>
+<title>Ext Autogrid Works</title>
+<head></head>
+<body>
+<div id="extRestGrid"></div>
+<!-- Adding ext all responsive touch css theme -->
+<link rel="stylesheet" href="ext/css/ext-theme-crisp-touch-all.css">
+<!-- Loading ext js core -->
+<script src="ext/js/ext-all.js"></script>
+<!-- take the jquery from google cdn -->
+<script src="js/jquery.min.js"></script>
+<!-- use my plugin -->
+<script src="ext-auto-grid.js"></script>
+<script>
+$("#extRestGrid").extAutoGrid({
+	url: 'server/static.json',
+	title:'Customer List',
+	width: '100%',
+	root: '_embedded.customers',
+	fields: ['name','address','notes','village','contactNumber','email'],
+	columns: [{text: 'Name',
+        dataIndex: 'name',
+        width: 300,
+        field: {
+            xtype: 'textfield'
+        }},
+        {text: 'Address',
+            dataIndex: 'address',
+            field: {
+                xtype: 'textfield'
+            }},
+            {text: 'Notes',
+                dataIndex: 'notes',
+                field: {
+                    xtype: 'textfield'
+                }},{text: 'Village',
+                    dataIndex: 'village',
+                    field: {
+                        xtype: 'textfield'
+                    }},
+        {text: 'Contact Number',
+        dataIndex: 'contactNumber',
+        width: 400,
+        field: {
+            xtype: 'textfield'
+        }},{text:'Email',
+        dataIndex: 'email',
+        field: {
+            xtype: 'textfield'
+        }}
+	 ]
+});
+</script>
+</body>
+</html>
